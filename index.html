@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./stylepc.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./coding.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Coding Bootcamp</title>
+</head>
+<body>
+
+    <div id="loader" class="center"></div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+    <div class="scroll">
+        <div id="one" class="one active"><i class="fa-solid fa-circle"></i></div>
+        <div id="two" class="two"><i class="fa-solid fa-circle"></i></div>
+        <div id="three" class="three"><i class="fa-solid fa-circle"></i></div>
+        <div id="four" class="four"><i class="fa-solid fa-circle"></i></div>
+    </div>
+
+    <nav data-AOS="slide-down">
+        <ul>
+            <li><a class="ACTIVE" href="#">&lthome&gt</a></li>
+            <li><a href="#">&ltabout us&gt</a></li>
+        </ul>
+    </nav>
+    <div data-AOS="slide-right" class="main-text">
+        <p>Hello</p>
+        <hr>
+        <p>World</p>
+    </div>
+    <div class="services">
+        <div class="game-card" onclick="game()">
+            <div data-AOS="slide-up" class="card">
+                <p class="card-title">GAME DEVELOPMENT</p>
+                <img class="card-icon" src="./gamedev.png" alt="">
+                <p class="click">click for more...</p>
+            </div>
+        </div>
+        <div class="web-card" onclick="web()">
+            <div data-AOS="slide-up" class="card">
+                <p class="card-title">WEB DEVELOPMENT</p>
+                <img class="card-icon" src="./webdev.png" alt="">
+                <p class="click">click for more...</p>
+            </div>
+        </div>
+        <div class="py-card" onclick="py()">
+            <div data-AOS="slide-up" class="card">
+                <p class="card-title">PYTHON PROGRAMMING</p>
+                <img class="card-icon" src="./python.png" alt="">
+                <p class="click">click for more...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="main-bg" class="main-bg">
+            <img src="./lappy.jpg" alt="">
+        </div>
+        <div id="one" class="full game-dev">
+            <img data-AOS="slide-left" src="./game2.jpeg" alt="">
+            <div data-AOS="slide-right" class="desc">
+                building games
+                <br>
+                in python
+                <br>
+                using pygame library
+                <br>
+                and various other libraries...
+            </div>
+        </div>
+        <div id="two" class="full web-dev">
+            <img data-AOS="slide-right" src="./web.jpg" alt="">
+            <div data-AOS="slide-left" class="desc">
+                front end 
+                <br>
+                web development 
+                <br>
+                using 
+                <br>
+                HTML5, CSS3, Javascript
+                <br>
+                and so on...
+            </div>
+        </div>
+        <div id="three" class="full python">
+            <img data-AOS="slide-left" src="./python.jpg" alt="">
+            <div data-AOS="slide-right" class="desc">
+                personal voice assistant,
+                <br>
+                computer-vision,
+                <br>
+                automation
+                <br>
+                and much more...
+            </div>
+        </div>
+    </div>
+
+    <div id="creator" class="creator">
+        <img src="./mypic.jpg" alt="">
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>

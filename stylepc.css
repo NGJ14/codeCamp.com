@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background: #000;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+nav{
+    position: absolute;
+    font-family: 'M PLUS Code Latin',sans-serif;
+    background: -webkit-radial-gradient(rgb(108, 255, 54), rgb(2, 175, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    right: 0px;
+}
+nav ul{
+    display: flex;
+    padding: 15px 40px;
+    list-style: none;
+}
+nav ul li{
+    padding: 20px 30px;
+}
+nav ul li a{
+    font-size: 1.4rem;
+    padding: 1px 3px;
+}
+nav ul li a.ACTIVE, nav ul li a:hover{
+    border: 1px solid rgb(255, 0, 136);
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 3%;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background: -webkit-radial-gradient(rgb(255, 54, 87), rgb(57, 1, 70));
+    color: black;
+    cursor: pointer;
+    padding: 0px 12px;
+    border-radius: 50%;
+    font-size: 50px;
+}
+#myBtn:hover {
+    background: -webkit-radial-gradient(rgb(108, 255, 54), rgb(2, 175, 255));
+}
+
+
+
+.main-bg img{
+    height: 100vh;
+    width: 100vw;
+}
+.main-text{
+    position: absolute;
+    font-size: 8rem;
+    font-weight: 900;
+    opacity: 0.8;
+    /* color: rgb(255, 54, 87); */
+    background: -webkit-radial-gradient(rgb(255, 54, 87), rgb(57, 1, 70));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 5%;
+    left: 10%;
+}
+
+
+
+.scroll{
+    position: fixed;
+    right: 10px;
+    top: 40%;
+    /* color: rgb(186, 186, 186); */
+    font-size: 10px;
+    background: -webkit-radial-gradient(rgb(108, 255, 54), rgb(2, 175, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    z-index: 50;
+}
+.scroll div{
+    padding: 5px;
+    transition-property: scale;
+}
+.scroll div.active{
+    transform: scale(2);
+    background: -webkit-radial-gradient(rgb(108, 255, 54), rgb(2, 175, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+}
+
+
+
+.services{
+    position: absolute;
+    bottom: 6%;
+    display: flex;
+}
+.card{
+    height: 250px;
+    width: 180px;
+    border-radius:10%;
+    margin: 35px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    background: rgba(11, 11, 11, 0.573);
+    background: -webkit-linear-gradient(rgb(2, 175, 255),rgb(108, 255, 54));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.card:hover{
+    transform:scale(1.2);
+    background: -webkit-linear-gradient(rgb(108, 255, 54),rgb(2, 175, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    border: 7px solid greenyellow;
+}
+.card-title{
+    color: rgba(255, 255, 255, 0.682);
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.card-icon{
+    margin-top: 20px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.click{
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+
+.full{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-dev{
+    background: rgb(10, 10, 10);
+}
+.game-dev img {
+    height: 90%;
+    width: 80vw;
+}
+.game-dev .desc {
+    position: absolute;
+    font-size: 3.8rem;
+    color: rgba(255, 255, 255, 0.682);
+    text-align: center;
+}
+
+.web-dev{
+    background: rgb(20, 20, 20);
+}
+.web-dev img{
+    height: 90%;
+    width: 80vw;
+}
+.web-dev .desc {
+    position: absolute;
+    font-size: 3.8rem;
+    color: rgba(255, 255, 255, 0.682);
+    text-align: center;
+}
+
+.python{
+    background: rgb(30, 30, 30);
+}
+.python img {
+    height: 90%;
+    width: 80vw;
+}
+.python .desc{
+    font-size: 3.2rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 11.5vw;
+}
+
+
+.creator{
+    position: fixed;
+    bottom: 15px;
+    right: 23px;
+}
+.creator img{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.center {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+#loader {
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
