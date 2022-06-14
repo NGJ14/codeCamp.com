@@ -74,24 +74,24 @@ wh = window.innerHeight;
 function game() {
     var i = window.scrollY;
     var int = setInterval(function() {
-        i += 25;
+        i += 50;
         window.scrollTo(0, i);
         if (i >= wh) clearInterval(int);
-    }, (wh)/25);
+    }, (wh)/50);
 }
 function web() {
     var i = window.scrollY;
     var int = setInterval(function() {
-        i += 25;
+        i += 50;
         window.scrollTo(0, i);
         if (i >= 2*wh) clearInterval(int);
-    }, (wh)/25);
+    }, (wh)/50);
 }
 function py() {
     var i = window.scrollY;
     var int = setInterval(function() {
-        i += 25;
+        i += 50;
         window.scrollTo(0, i);
         if (i >= 3*wh) clearInterval(int);
-    }, wh/25);
+    }, wh/50);
 }
